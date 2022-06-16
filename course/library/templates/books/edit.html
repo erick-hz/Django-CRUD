@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Edit a new book{% endblock %}
+
+{% block content %} 
+<div class="card">
+    <div class="card-header">
+        Edit book information
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Book Details</h4>
+
+        {% include 'books/form.html' %}
+    </div>
+</div>
+{% endblock %}
