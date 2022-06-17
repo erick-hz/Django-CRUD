@@ -29,8 +29,8 @@
                     </td>
                     <td>{{ book.description }}</td>
                     <td>
-                        <a name="" id="" class="btn btn-info" href="{% url 'edit'%}" role="button">Edit</a> |
-                        <a name="" id="" class="btn btn-danger" href="" role="button">Delete</a>
+                        <a name="" id="" class="btn btn-info" href="{% url 'edit' book.id %}" role="button">Edit</a> |
+                        <a name="" id="" class="btn btn-danger" href="{% url 'delete' book.id %}" role="button">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}
